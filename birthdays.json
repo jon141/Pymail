@@ -1,0 +1,17 @@
+{
+  "einmaligeskürzel": {
+    "name": "Anrede und Name des Empfängers. Entferne diesen Eintrag vor dem Start des Skripts.",
+    "date": "Geburtsdatum im Format 'Tag.Monat.Jahr'. Wenn das Jahr nicht bekannt ist, schreibe '0000' als Jahr (auch die führenden Nullen müssem beachtet werden also 04 statt 4).",
+    "message": "Name der Nachrichtendatei (kann eine .txt oder .html Datei sein). Stelle sicher, dass die Endung der Datei mit angegeben ist.",
+    "mail": "E-Mail-Adresse des Empfängers (Beispiel: 'email@example.com').",
+    "subject": "Name der Datei, die den Betreff der E-Mail enthält (Endung nicht vergessen). Falls die Datei in einem Unterordner liegt, gib den vollständigen Pfad an (z. B. 'Ordnername/standardsubject.txt')."
+  },
+
+  "Beispiel in der Anwendung": {
+    "name": "Jonas",
+    "date": "02.08.2007",
+    "message": "standardmessage.html",
+    "mail": "jkappelix@gmail.com",
+    "subject": "standardsubject.txt"
+  }
+}

@@ -1,0 +1,8 @@
+{
+    "fromMail": "deine Eimail adresse",
+    "password": "Dein Email password",
+    "smtp_server": "EmailServer zum Beispiel: mail.gmx.net",
+    "smtp_port": 587,
+    "signature": "Deine Unterschrift | smtp_port kann auch 465 sein | bbc blindkopie kann false sein",
+    "bcc": true 
+}
