@@ -84,6 +84,17 @@ try:
                 to_email = birthday_json[item]['mail']
                 subject_file = birthday_json[item]['subject']
                 message_file = birthday_json[item]['message']
+                try:
+                    print(full_date_today, 'fulldatetoday')
+                    birthyear = birthday_json[item]['date'].split('.')[-1]
+                    year = f"20{((str(full_date_today)).split('.'))[-1]}"
+                    print(year, 'year')
+                    print(birthyear, 'birthyear')
+                    age = int(year) - int(birthyear)
+                    print(age, 'age')
+                except:
+                    age = '(error when calculating age)'
+
 
                 try:
                     with open(subject_file, 'r', encoding='utf-8') as file:
@@ -100,8 +111,8 @@ try:
                         message = file.read() 
 
 
-                message = message.format(name=name, signature=signature)
-
+                message = message.format(name=name, signature=signature, age=age)
+                subject = subject.format(name=name, signature=signature, age=age)
 
 
 
