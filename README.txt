@@ -3,7 +3,8 @@ Python Emailverteiler ("Pymail") Dokumentation
 
 wenn du in deinen Nachrichten den Namen und deine Unterschrift automatisch einfügen lassen wilst:
     - {name} -> Name des Empfängers aus der birthday.json Datei
-    - {signature} -< Deine Signatur aus der config.json Datei
+    - {signature} -> Deine Signatur aus der config.json Datei
+    - {age} -> das Alter aus dem vollständigen Geburtsdatum berechnet
 - da einfügen, wo Name und Unterschrift stehen würden
 
 Dateien, die als Text deiner Mail eingefügt werden können .txt und .html Dateien sein
@@ -36,7 +37,7 @@ die birthdays.json Datei
 
 "Jonas": {                                  (in der Datei einmaliger Name / Kürzel)
     "name": "Jonas",                        (Name der Person (Anrede))
-    "date": "02.08.2007",                   (Geburtsdatum Tag.Monat.Jahr Wenn Jahr nicht bekannt einfach 0000, Nullen mitschreiben, also nicht 2.8.07, sondern 02.08.2007)
+    "date": "02.08.2007",                   (Geburtsdatum Tag.Monat.Jahr Wenn Jahr nicht bekannt einfach 0000 -> dann kein {age} verwenden, Nullen mitschreiben, also nicht 2.8.07, sondern 02.08.2007)
     "message": "standardmessage.html",      (Datei, die deinen Nachrichtentext enthält, Name mit Endung, wenn in seperatem Ordner, vollständigen Dateipfad verwenden)
     "mail": "jkappelix@gmail.com",          (Adresse des Empfängers)
     "subject": "standardsubject.txt"        (Betreff Datei mit Endnung)
